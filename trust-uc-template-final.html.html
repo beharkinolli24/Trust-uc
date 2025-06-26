@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TRUST UC - UC PUBG</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    header {
+      background-color: #1e1e2f;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      height: 50px;
+    }
+    header h1 {
+      color: #4fc3f7;
+      margin: 10px 0 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .section {
+      margin-top: 40px;
+    }
+    .packages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .card h3 {
+      margin: 0;
+      color: #4fc3f7;
+    }
+    .card p {
+      font-size: 18px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 4px;
+      border: none;
+      font-size: 16px;
+    }
+    button {
+      background-color: #4fc3f7;
+      color: #000;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #03a9f4;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e1e2f;
+      font-size: 14px;
+      color: #888;
+      margin-top: 40px;
+    }
+    .how-it-works, .about, .status {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      padding: 12px 16px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://i.imgur.com/nr6owkN.png" alt="TRUST UC Logo" />
+    <h1>TRUST UC</h1>
+    <p>Shitje e shpejtë dhe e besueshme e UC për PUBG Mobile</p>
+  </header>
+
+  <div class="container">
+
+    <section class="section packages">
+      <div class="card"><h3>30 UC</h3><p>€0.40</p></div>
+      <div class="card"><h3>60 UC</h3><p>€0.79</p></div>
+      <div class="card"><h3>325 UC</h3><p>€4.20</p></div>
+      <div class="card"><h3>660 UC</h3><p>€8.10</p></div>
+      <div class="card"><h3>1800 UC</h3><p>€21.00</p></div>
+    </section>
+
+    <section class="section order">
+      <div class="how-it-works">
+        <h2>Si funksionon?</h2>
+        <ol>
+          <li>Zgjidh paketën që dëshiron</li>
+          <li>Plotëso të dhënat dhe paguaj</li>
+          <li>UC dërgohet brenda 5–10 minutash</li>
+        </ol>
+      </div>
+
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <h2>Porosit UC</h2>
+        <input type="hidden" name="business" value="beharkinolli25@gmail.com" />
+        <input type="hidden" name="cmd" value="_xclick" />
+        <label>Player ID:</label>
+        <input type="text" name="custom" placeholder="Shkruaj Player ID" required />
+
+        <label>Nick i lojës:</label>
+        <input type="text" name="item_name" placeholder="Shkruaj nickname" required />
+
+        <label>Zgjedh paketën:</label>
+        <select name="amount" required>
+          <option value="0.40">30 UC - €0.40</option>
+          <option value="0.79">60 UC - €0.79</option>
+          <option value="4.20">325 UC - €4.20</option>
+          <option value="8.10">660 UC - €8.10</option>
+          <option value="21.00">1800 UC - €21.00</option>
+        </select>
+
+        <button type="submit">Paguaj me PayPal</button>
+      </form>
+    </section>
+
+    <section class="section status">
+      <h2>Statusi i porosisë</h2>
+      <p>Shkruaj Player ID në WhatsApp për të kontrolluar statusin e porosisë.</p>
+    </section>
+
+    <section class="section about">
+      <h2>Rreth nesh</h2>
+      <p>TRUST UC është platformë serioze për blerjen e UC. Ne dërgojmë brenda 5–10 minutash dhe ofrojmë mbështetje 24/7. Pagesat janë të sigurta përmes PayPal.</p>
+    </section>
+  </div>
+
+  <a class="whatsapp-btn" href="#" target="_blank">📞 WhatsApp</a>
+
+  <footer>
+    &copy; 2025 TRUST UC – Powered by Resd.
+  </footer>
+</body>
+</html>
